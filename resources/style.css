@@ -144,12 +144,7 @@ h1 {
   width: 1.5rem;
 }
 
-.fa-solid {
-  color: var(--white);
-  font-size: 1.6rem;
-  display: inline;
-  cursor: pointer;
-}
+
 
 .transform {
   display: flex;
@@ -230,15 +225,15 @@ h1 {
   margin-top: 1rem;
 }
 
-.transform a:after {
+.transform a::after {
   background-color: var(--yellow);
 }
-.standout-section a:after {
+.standout-section a::after {
   background-color: var(--soft-red);
 }
 
-.transform a:after,
-.standout-section a:after {
+.transform a::after,
+.standout-section a::after {
   content: "";
   position: absolute;
   opacity: 0.5;
@@ -249,6 +244,11 @@ h1 {
   left: 0;
   right: 0;
   top: 85%;
+}
+
+.transform a:hover,
+.standout-section a:hover {
+    opacity: 0.5;
 }
 
 .section-3 {
@@ -293,7 +293,7 @@ h1 {
   flex-direction: column;
   gap: 1.8rem;
   top: 61%;
-  left: 11%;
+  /* left: 11%; */
 }
 .graphic-design h2,
 .photography-section h2 {
@@ -535,9 +535,6 @@ footer .logo {
   .contact {
     display: initial;
   }
-  .fa-solid {
-    display: none;
-  }
 
   h1 {
     font-size: 3rem;
@@ -604,6 +601,7 @@ footer .logo {
 
 }
 
+
 @media screen and (min-width: 1025px) {
   .image-grid {
     grid-template-columns: repeat(4, 1fr);
@@ -627,6 +625,7 @@ footer .logo {
   }
   .photography-section .text-content {
     top: 66%;
+    left:15%;
     
   }
 }
