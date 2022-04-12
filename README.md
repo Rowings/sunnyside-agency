@@ -3,7 +3,6 @@
 - Create a public repository: `sunnyside-agency`
 - Duration: 2 days
 - Deadline: 12/04/2022 - 16:00
-- Submission form: https://forms.gle/S8KaMhm16buH4aob7
 
 ## Learning objectives
 
